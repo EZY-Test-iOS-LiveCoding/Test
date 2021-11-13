@@ -13,6 +13,18 @@
 		4664ACDB273FD26F00A2D09A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4664ACD9273FD26F00A2D09A /* LaunchScreen.storyboard */; };
 		4664ACEF273FD87E00A2D09A /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664ACEE273FD87E00A2D09A /* AppFlow.swift */; };
 		4664ACF2273FD89D00A2D09A /* HanStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664ACF1273FD89D00A2D09A /* HanStep.swift */; };
+		4664ACF6273FD96600A2D09A /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664ACF5273FD96600A2D09A /* MainFlow.swift */; };
+		4664ACFD273FDA4300A2D09A /* StepExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664ACFC273FDA4300A2D09A /* StepExt.swift */; };
+		4664ACFF273FDD3700A2D09A /* MainReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664ACFE273FDD3700A2D09A /* MainReactor.swift */; };
+		4664AD03273FDFA700A2D09A /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664AD02273FDFA700A2D09A /* MainVC.swift */; };
+		4664AD06273FDFB300A2D09A /* baseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664AD05273FDFB300A2D09A /* baseVC.swift */; };
+		4664AD09273FE56F00A2D09A /* ImageExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664AD08273FE56F00A2D09A /* ImageExt.swift */; };
+		4664AD0C273FE78D00A2D09A /* DynamicFontExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664AD0B273FE78D00A2D09A /* DynamicFontExt.swift */; };
+		4664AD0F273FE8AE00A2D09A /* HanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664AD0E273FE8AE00A2D09A /* HanAPI.swift */; };
+		4664AD12273FE9A300A2D09A /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664AD11273FE9A300A2D09A /* Temp.swift */; };
+		4664AD14273FE9EF00A2D09A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664AD13273FE9EF00A2D09A /* NetworkManager.swift */; };
+		4664AD16273FEB4900A2D09A /* AppleSDGothic-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4664AD15273FEB4300A2D09A /* AppleSDGothic-light.otf */; };
+		4664AD17273FEB4C00A2D09A /* AppleSDGothic-heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4664ACE7273FD80100A2D09A /* AppleSDGothic-heavy.otf */; };
 		6FEC02C67840C5B779A45D41 /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707E725382A01E1A8A3EA12F /* Pods_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,9 +36,20 @@
 		4664ACD7273FD26F00A2D09A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4664ACDA273FD26F00A2D09A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4664ACDC273FD26F00A2D09A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Test/Support/Info.plist; sourceTree = SOURCE_ROOT; };
-		4664ACE7273FD80100A2D09A /* apple-sd-gothic-neo-heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "apple-sd-gothic-neo-heavy.otf"; sourceTree = "<group>"; };
+		4664ACE7273FD80100A2D09A /* AppleSDGothic-heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothic-heavy.otf"; sourceTree = "<group>"; };
 		4664ACEE273FD87E00A2D09A /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		4664ACF1273FD89D00A2D09A /* HanStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanStep.swift; sourceTree = "<group>"; };
+		4664ACF5273FD96600A2D09A /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
+		4664ACFC273FDA4300A2D09A /* StepExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepExt.swift; sourceTree = "<group>"; };
+		4664ACFE273FDD3700A2D09A /* MainReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainReactor.swift; sourceTree = "<group>"; };
+		4664AD02273FDFA700A2D09A /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		4664AD05273FDFB300A2D09A /* baseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = baseVC.swift; sourceTree = "<group>"; };
+		4664AD08273FE56F00A2D09A /* ImageExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageExt.swift; sourceTree = "<group>"; };
+		4664AD0B273FE78D00A2D09A /* DynamicFontExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFontExt.swift; sourceTree = "<group>"; };
+		4664AD0E273FE8AE00A2D09A /* HanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HanAPI.swift; sourceTree = "<group>"; };
+		4664AD11273FE9A300A2D09A /* Temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
+		4664AD13273FE9EF00A2D09A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4664AD15273FEB4300A2D09A /* AppleSDGothic-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothic-light.otf"; sourceTree = "<group>"; };
 		707E725382A01E1A8A3EA12F /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA03AE42DF4E2963D00D3BA /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,7 +107,8 @@
 		4664ACE2273FD5FB00A2D09A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				4664ACE7273FD80100A2D09A /* apple-sd-gothic-neo-heavy.otf */,
+				4664AD15273FEB4300A2D09A /* AppleSDGothic-light.otf */,
+				4664ACE7273FD80100A2D09A /* AppleSDGothic-heavy.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -92,8 +116,11 @@
 		4664ACE8273FD82E00A2D09A /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				4664AD0D273FE89B00A2D09A /* Network */,
+				4664ACF9273FDA2C00A2D09A /* Common */,
 				4664ACED273FD87500A2D09A /* Flows */,
 				4664ACEB273FD86500A2D09A /* Scene */,
+				4664AD04273FDFAB00A2D09A /* Base */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -118,6 +145,7 @@
 		4664ACEB273FD86500A2D09A /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				4664ACF3273FD94200A2D09A /* Main */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -134,8 +162,9 @@
 		4664ACED273FD87500A2D09A /* Flows */ = {
 			isa = PBXGroup;
 			children = (
-				4664ACF0273FD88100A2D09A /* Step */,
 				4664ACEE273FD87E00A2D09A /* AppFlow.swift */,
+				4664ACF0273FD88100A2D09A /* Step */,
+				4664ACF4273FD95200A2D09A /* Flow */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -146,6 +175,83 @@
 				4664ACF1273FD89D00A2D09A /* HanStep.swift */,
 			);
 			path = Step;
+			sourceTree = "<group>";
+		};
+		4664ACF3273FD94200A2D09A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4664AD02273FDFA700A2D09A /* MainVC.swift */,
+				4664ACFE273FDD3700A2D09A /* MainReactor.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		4664ACF4273FD95200A2D09A /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				4664ACF5273FD96600A2D09A /* MainFlow.swift */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		4664ACF9273FDA2C00A2D09A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4664AD10273FE98800A2D09A /* Model */,
+				4664ACFA273FDA2F00A2D09A /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4664ACFA273FDA2F00A2D09A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4664AD07273FE56800A2D09A /* UIKit */,
+				4664ACFB273FDA3600A2D09A /* Rx */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4664ACFB273FDA3600A2D09A /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				4664ACFC273FDA4300A2D09A /* StepExt.swift */,
+			);
+			path = Rx;
+			sourceTree = "<group>";
+		};
+		4664AD04273FDFAB00A2D09A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4664AD05273FDFB300A2D09A /* baseVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4664AD07273FE56800A2D09A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				4664AD08273FE56F00A2D09A /* ImageExt.swift */,
+				4664AD0B273FE78D00A2D09A /* DynamicFontExt.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		4664AD0D273FE89B00A2D09A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4664AD0E273FE8AE00A2D09A /* HanAPI.swift */,
+				4664AD13273FE9EF00A2D09A /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4664AD10273FE98800A2D09A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4664AD11273FE9A300A2D09A /* Temp.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A497BA4BF2DA84623714B634 /* Pods */ = {
@@ -217,7 +323,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4664AD16273FEB4900A2D09A /* AppleSDGothic-light.otf in Resources */,
 				4664ACDB273FD26F00A2D09A /* LaunchScreen.storyboard in Resources */,
+				4664AD17273FEB4C00A2D09A /* AppleSDGothic-heavy.otf in Resources */,
 				4664ACD8273FD26F00A2D09A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,7 +380,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4664ACCF273FD26D00A2D09A /* AppDelegate.swift in Sources */,
+				4664AD09273FE56F00A2D09A /* ImageExt.swift in Sources */,
 				4664ACEF273FD87E00A2D09A /* AppFlow.swift in Sources */,
+				4664ACFF273FDD3700A2D09A /* MainReactor.swift in Sources */,
+				4664ACF6273FD96600A2D09A /* MainFlow.swift in Sources */,
+				4664AD03273FDFA700A2D09A /* MainVC.swift in Sources */,
+				4664AD06273FDFB300A2D09A /* baseVC.swift in Sources */,
+				4664ACFD273FDA4300A2D09A /* StepExt.swift in Sources */,
+				4664AD0F273FE8AE00A2D09A /* HanAPI.swift in Sources */,
+				4664AD0C273FE78D00A2D09A /* DynamicFontExt.swift in Sources */,
+				4664AD14273FE9EF00A2D09A /* NetworkManager.swift in Sources */,
+				4664AD12273FE9A300A2D09A /* Temp.swift in Sources */,
 				4664ACD1273FD26D00A2D09A /* SceneDelegate.swift in Sources */,
 				4664ACF2273FD89D00A2D09A /* HanStep.swift in Sources */,
 			);

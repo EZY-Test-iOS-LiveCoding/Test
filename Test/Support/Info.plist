@@ -4,7 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>AppleSDGothicNeo-Heavy.otf</string>
+		<string>AppleSDGothic-light.otf</string>
+		<string>AppleSDGothic-heavy.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

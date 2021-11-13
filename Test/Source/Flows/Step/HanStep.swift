@@ -16,4 +16,5 @@ enum HanStep: Step{
     
     //Location
     case LocationIsRequired
+    
 }
