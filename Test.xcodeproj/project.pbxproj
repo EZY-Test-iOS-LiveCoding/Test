@@ -25,6 +25,9 @@
 		4664AD14273FE9EF00A2D09A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4664AD13273FE9EF00A2D09A /* NetworkManager.swift */; };
 		4664AD16273FEB4900A2D09A /* AppleSDGothic-light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4664AD15273FEB4300A2D09A /* AppleSDGothic-light.otf */; };
 		4664AD17273FEB4C00A2D09A /* AppleSDGothic-heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4664ACE7273FD80100A2D09A /* AppleSDGothic-heavy.otf */; };
+		467B9815273FF51D004DFCD3 /* LocationReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467B9814273FF51D004DFCD3 /* LocationReactor.swift */; };
+		467B9817273FF5A5004DFCD3 /* LocationFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467B9816273FF5A5004DFCD3 /* LocationFlow.swift */; };
+		467B9819273FF5C7004DFCD3 /* LocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467B9818273FF5C7004DFCD3 /* LocationVC.swift */; };
 		6FEC02C67840C5B779A45D41 /* Pods_Test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707E725382A01E1A8A3EA12F /* Pods_Test.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +53,9 @@
 		4664AD11273FE9A300A2D09A /* Temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
 		4664AD13273FE9EF00A2D09A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		4664AD15273FEB4300A2D09A /* AppleSDGothic-light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AppleSDGothic-light.otf"; sourceTree = "<group>"; };
+		467B9814273FF51D004DFCD3 /* LocationReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationReactor.swift; sourceTree = "<group>"; };
+		467B9816273FF5A5004DFCD3 /* LocationFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFlow.swift; sourceTree = "<group>"; };
+		467B9818273FF5C7004DFCD3 /* LocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationVC.swift; sourceTree = "<group>"; };
 		707E725382A01E1A8A3EA12F /* Pods_Test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EA03AE42DF4E2963D00D3BA /* Pods-Test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Test.release.xcconfig"; path = "Target Support Files/Pods-Test/Pods-Test.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				4664ACF3273FD94200A2D09A /* Main */,
+				467B9811273FF42B004DFCD3 /* Location */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -190,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				4664ACF5273FD96600A2D09A /* MainFlow.swift */,
+				467B9816273FF5A5004DFCD3 /* LocationFlow.swift */,
 			);
 			path = Flow;
 			sourceTree = "<group>";
@@ -254,6 +262,15 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		467B9811273FF42B004DFCD3 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				467B9818273FF5C7004DFCD3 /* LocationVC.swift */,
+				467B9814273FF51D004DFCD3 /* LocationReactor.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 		A497BA4BF2DA84623714B634 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +292,7 @@
 				4664ACC8273FD26D00A2D09A /* Frameworks */,
 				4664ACC9273FD26D00A2D09A /* Resources */,
 				FBFDB0E4F41F9F3F5C63A087 /* [CP] Embed Pods Frameworks */,
+				F686CB5DC480A9487E0C4A7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -355,6 +373,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F686CB5DC480A9487E0C4A7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Test/Pods-Test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FBFDB0E4F41F9F3F5C63A087 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -381,17 +416,20 @@
 			files = (
 				4664ACCF273FD26D00A2D09A /* AppDelegate.swift in Sources */,
 				4664AD09273FE56F00A2D09A /* ImageExt.swift in Sources */,
+				467B9815273FF51D004DFCD3 /* LocationReactor.swift in Sources */,
 				4664ACEF273FD87E00A2D09A /* AppFlow.swift in Sources */,
 				4664ACFF273FDD3700A2D09A /* MainReactor.swift in Sources */,
 				4664ACF6273FD96600A2D09A /* MainFlow.swift in Sources */,
 				4664AD03273FDFA700A2D09A /* MainVC.swift in Sources */,
 				4664AD06273FDFB300A2D09A /* baseVC.swift in Sources */,
+				467B9819273FF5C7004DFCD3 /* LocationVC.swift in Sources */,
 				4664ACFD273FDA4300A2D09A /* StepExt.swift in Sources */,
 				4664AD0F273FE8AE00A2D09A /* HanAPI.swift in Sources */,
 				4664AD0C273FE78D00A2D09A /* DynamicFontExt.swift in Sources */,
 				4664AD14273FE9EF00A2D09A /* NetworkManager.swift in Sources */,
 				4664AD12273FE9A300A2D09A /* Temp.swift in Sources */,
 				4664ACD1273FD26D00A2D09A /* SceneDelegate.swift in Sources */,
+				467B9817273FF5A5004DFCD3 /* LocationFlow.swift in Sources */,
 				4664ACF2273FD89D00A2D09A /* HanStep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

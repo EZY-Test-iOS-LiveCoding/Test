@@ -8,6 +8,7 @@
 import UIKit
 import RxFlow
 import RxRelay
+import MaterialComponents.MaterialBottomSheet
 
 struct MainStepper: Stepper{
     let steps: PublishRelay<Step> = .init()
@@ -38,8 +39,10 @@ final class MainFlow: Flow{
         switch step{
         case .MainIsRequired:
             return coordinateToMainVC()
-        default:
-            return .none
+        case .LocationIsRequired:
+            return coordinateToLocationVC()
+        case .dismiss:
+            return dismissVC()
         }
     }
     
@@ -49,5 +52,19 @@ final class MainFlow: Flow{
         self.rootVC.setViewControllers([vc], animated: true)
         
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: reactor))
+    }
+    
+    private func coordinateToLocationVC() -> FlowContributors{
+        let reactor = LocationReactor()
+        let vc = MDCBottomSheetController(contentViewController: LocationVC(reactor: reactor))
+        vc.preferredContentSize = CGSize(width: UIScreen.main.bounds.width, height: 600)
+        self.rootVC.visibleViewController?.present(vc, animated: true)
+        
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: reactor))
+    }
+    
+    private func dismissVC() -> FlowContributors{
+        self.rootVC.visibleViewController?.dismiss(animated: true)
+        return .none
     }
 }

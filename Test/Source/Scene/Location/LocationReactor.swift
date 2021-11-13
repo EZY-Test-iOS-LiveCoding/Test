@@ -1,58 +1,44 @@
 //
-//  MainReactor.swift
+//  LocationReactor.swift
 //  Test
 //
 //  Created by baegteun on 2021/11/13.
 //
 
 import ReactorKit
-import RxCocoa
 import RxFlow
+import RxCocoa
 
-final class MainReactor: Reactor, Stepper{
+final class LocationReactor: Reactor, Stepper{
     // MARK: - Properties
     var disposeBag: DisposeBag = .init()
     
-    // MARK: Stepper
+    // MARK: Step
     var steps: PublishRelay<Step> = .init()
     
     // MARK: Events
     enum Action{
         case loadTemp
-        case locationDidTap
     }
     enum Mutation{
-        case setTemp(_ temp: String)
+        case setTemp(_ temp:String)
     }
-    
     struct State{
         var temp: String?
     }
     
     let initialState: State
+    
     init(){
         self.initialState = State()
     }
-    
-}
-
-// MARK: - Extensions
-
-// MARK: Mutation
-extension MainReactor{
     func mutate(action: Action) -> Observable<Mutation> {
         switch action{
-        case .locationDidTap:
-            steps.accept(HanStep.LocationIsRequired)
-            return .empty()
+        
         case .loadTemp:
             return fetchTemp()
         }
     }
-}
-
-// MARK: Reduce
-extension MainReactor{
     func reduce(state: State, mutation: Mutation) -> State {
         var new = state
         
@@ -63,10 +49,6 @@ extension MainReactor{
         
         return new
     }
-}
-
-// MARK: Method
-private extension MainReactor{
     func fetchTemp() -> Observable<Mutation>{
         return NetworkManager.shared.fetchTemp()
             .asObservable()
