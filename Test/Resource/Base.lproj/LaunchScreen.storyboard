@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="apple-sd-gothic-neo-heavy.otf">
+            <string>AppleSDGothicNeo-Heavy</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashImage" translatesAutoresizingMaskIntoConstraints="NO" id="ihN-RD-iIs">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bridge" translatesAutoresizingMaskIntoConstraints="NO" id="DTG-hv-CLU">
+                                <rect key="frame" x="139" y="323" width="136" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="136" id="QiJ-dh-C1d"/>
+                                    <constraint firstAttribute="height" constant="72" id="pDJ-1J-9W9"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="136" id="wGj-aR-DY8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="한강 수온" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQR-bg-Bdh">
+                                <rect key="frame" x="151" y="448" width="112" height="36"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Heavy" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iQR-bg-Bdh" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0bO-ik-4yI"/>
+                            <constraint firstItem="iQR-bg-Bdh" firstAttribute="top" secondItem="DTG-hv-CLU" secondAttribute="bottom" constant="53" id="3Rb-n6-9gL"/>
+                            <constraint firstItem="ihN-RD-iIs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F3Z-XO-pD8"/>
+                            <constraint firstAttribute="bottom" secondItem="ihN-RD-iIs" secondAttribute="bottom" id="TDh-Mi-waY"/>
+                            <constraint firstItem="DTG-hv-CLU" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="etu-lW-KL3"/>
+                            <constraint firstItem="ihN-RD-iIs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hbr-6f-WhC"/>
+                            <constraint firstItem="DTG-hv-CLU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="279" id="uNv-fD-Tek"/>
+                            <constraint firstItem="ihN-RD-iIs" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="vYe-ql-9Cq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bridge" width="272" height="144"/>
+        <image name="SplashImage" width="750" height="1624"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
